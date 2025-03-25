@@ -9,12 +9,11 @@ const HomeScreen = () => {
     };
 
     return (
+        // We wrap the background image with ImageBackground
         <ImageBackground
-            source={{
-                uri: 'https://images.unsplash.com/photo-1517817748498-6e9c0c6ffb8e?auto=format&fit=crop&w=800&q=60',
-            }}
-            style={styles.background}
-            imageStyle={{ opacity: 0.3 }}
+            source={require('../assets/background.png')} // Local image used
+            style={styles.background} // Style for full screen overlay
+            imageStyle={{ opacity: 0.3 }} // To make the image dim
         >
             <View style={styles.container}>
                 <HelloText />
